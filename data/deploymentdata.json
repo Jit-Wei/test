@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Freshman Orientation",
+    "radio": true,
+    "roving": false,
+    "surpriseroving": false,
+    "food": true,
+    "staffnumber": 4
+  },
+  {
+    "name": "Law",
+    "radio": false,
+    "roving": false,
+    "surpriseroving": true,
+    "food": false,
+    "staffnumber": 2
+  },
+  {
+    "name": "SCIS",
+    "radio": false,
+    "roving": false,
+    "surpriseroving": false,
+    "food": true,
+    "staffnumber": 2
+  },
+  {
+    "name": "Econs",
+    "radio": false,
+    "roving": false,
+    "surpriseroving": false,
+    "food": false,
+    "staffnumber": 2
+  },
+  {
+    "name": "Bondue",
+    "radio": false,
+    "roving": false,
+    "surpriseroving": false,
+    "food": false,
+    "staffnumber": 4
+  },
+  {
+    "name": "Bondue Actual Run",
+    "radio": false,
+    "roving": false,
+    "surpriseroving": false,
+    "food": false,
+    "staffnumber": 4
+  },
+  {
+    "name": "Patron's Day",
+    "radio": true,
+    "roving": false,
+    "surpriseroving": false,
+    "food": false,
+    "staffnumber": 4
+  }
+]

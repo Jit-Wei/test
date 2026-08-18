@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/change" method="post">
+    <table>
+        <tr>
+   <% deploymentKeys.forEach(key => { %>
+    
+            
+            <th><%= key %></th>
+            
+            
+            
+       <% }) %>
+    </tr>
+    
+        <% deploymentData.forEach(deployment => { %>
+            <tr>
+         <% deploymentKeys.forEach(key => { %>
+            <% if (key==='name') { %>
+             <td><%= deployment[key] %></td>
+            <% } else { %>
+            <td><input type="checkbox" name="<%= deployment.name + '-' + key %>" id="" <%=(deployment[key]) ? "checked" : ''  %>><%# deployment[key] %></td>
+
+            <!-- <td><%# deployment.key %></td> -->
+             <% } %>
+         <% }) %>
+         </tr>
+        <% }) %>
+
+        
+    </tr>
+   </table>
+   </form>
+</body>
+</html>

@@ -1,32 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Deployment</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Add Deployment (merge confilct changes)</h1>
-    <p>Fill up form <details>
-        check all revelant checkboxes
-    </details></p>
-    <p>Fields with * are mandatory</p>
-    <form action="/add" method="post">
-        <label for="name"> Name * : </label><input type="text" name="name" id="name" value="<%= name ? name : '' %>">
-        <br><br>
-        <input type="checkbox" name="radio" id="radio" value=true <%= radio ? 'checked' : '' %>><label for="radio">radio</label>
-        <br><br>
-        <input type="checkbox" name="roving" id="roving" value=true <%= roving ? 'checked' : '' %>><label for="roving">roving</label>
-        <br><br>
-        <input type="checkbox" name="surprises" id="surprises" value=true <%= surprises ? 'checked' : '' %>><label for="surpriseroving">Surprises</label>
-        <br><br>
-        <input type="checkbox" name="food" id="food" value=true <%= food ? 'checked' : '' %>><label for="food">Food</label>
-        <br><br>
-        <label for="staffnumber">Number of Lionhearters needed per day * : </label><input type="number" name="staffnumber" id="staffnumber" min="2" value="<%= staffnumber ? staffnumber : '' %>" >
-        <br><br>
-        <button type="submit">submit</button>
-        
 
 <head>
   <meta charset="UTF-8">
@@ -36,7 +9,7 @@
 </head>
 
 <body>
-  <h1>Add Deployment111</h1>
+  <h1>Add Deployment (hello world)</h1>
   <p>Chein Wong</p>
   <p>Fill up form
   <details>
@@ -60,18 +33,50 @@
     <button type="submit">submit</button>
 
 
-  </form>
-  <br><br>
-  <% if (errors.length>0) { %>
-  <div class="error">
-    <h2>Error</h2>
-    <ul>
-      <% errors.forEach(error => { %>
-      <li><%= error %></li>
-      <% }) %>
-    </ul>
-  </div>
-  <% } %>
-</body>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Add Deployment</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <h1>Add Deployment111</h1>
+      <p>Chein Wong</p>
+      <p>Fill up form
+      <details>
+        check all revelant checkboxes
+      </details>
+      </p>
+      <p>Fields with * are mandatory</p>
+      <form action="/add" method="post">
+        <label for="name"> Name * : </label><input type="text" name="name" id="name" value="<%= name ? name : '' %>">
+        <br><br>
+        <input type="checkbox" name="radio" id="radio" value=true <%= radio ? 'checked' : '' %>><label for="radio">radio</label>
+        <br><br>
+        <input type="checkbox" name="roving" id="roving" value=true <%= roving ? 'checked' : '' %>><label for="roving">roving</label>
+        <br><br>
+        <input type="checkbox" name="surprises" id="surprises" value=true <%= surprises ? 'checked' : '' %>><label for="surpriseroving">Surprises</label>
+        <br><br>
+        <input type="checkbox" name="food" id="food" value=true <%= food ? 'checked' : '' %>><label for="food">Food</label>
+        <br><br>
+        <label for="staffnumber">Number of Lionhearters needed per day * : </label><input type="number" name="staffnumber" id="staffnumber" min="2" value="<%= staffnumber ? staffnumber : '' %>">
+        <br><br>
+        <button type="submit">submit</button>
+
+
+      </form>
+      <br><br>
+      <% if (errors.length>0) { %>
+      <div class="error">
+        <h2>Error</h2>
+        <ul>
+          <% errors.forEach(error => { %>
+          <li><%= error %></li>
+          <% }) %>
+        </ul>
+      </div>
+      <% } %>
+    </body>
 
 </html>
